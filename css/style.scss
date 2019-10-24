@@ -1,0 +1,26 @@
+body {
+    /*sets font family, no margin to fit correctly*/
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0px;
+    background-color: #bebebe;
+    word-spacing: -1px;
+
+    header{
+        background-color: #1b1b1d!important;
+    }
+
+    content{
+
+
+        #userProfile{
+            background-color: #1b1b1d;
+        }
+
+
+        img{
+            // height: 150px;
+            border-radius: 40%;
+        }
+    }
+}
+

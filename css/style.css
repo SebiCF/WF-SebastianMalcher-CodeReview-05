@@ -1,0 +1,20 @@
+body {
+  /*sets font family, no margin to fit correctly*/
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0px;
+  background-color: #bebebe;
+  word-spacing: -1px;
+}
+
+body header {
+  background-color: #1b1b1d !important;
+}
+
+body content #userProfile {
+  background-color: #1b1b1d;
+}
+
+body content img {
+  border-radius: 40%;
+}
+/*# sourceMappingURL=style.css.map */

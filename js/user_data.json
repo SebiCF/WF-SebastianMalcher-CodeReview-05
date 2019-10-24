@@ -1,0 +1,250 @@
+var user_data =
+
+    [{
+
+            "name": "Charlie",
+
+            "age": "6",
+
+            "image": "./img/ape.jpg",
+
+            "hobbies": "Bananas and climbing on trees",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Jacky",
+
+            "age": "5",
+
+            "image": "./img/bird.jpg",
+
+            "hobbies": "Flying around",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Willow",
+
+            "age": "2",
+
+            "image": "./img/sloth.jpg",
+
+            "hobbies": "Sleeping, eating, hanging around - generally all of these combined :P",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Felix",
+
+            "age": "8",
+
+            "image": "./img/tiger.jpg",
+
+            "hobbies": "What housecats do, just bigger",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Niko",
+
+            "age": "3",
+
+            "image": "./img/ape2.jpg",
+
+            "hobbies": "Eating, annoying my human, destroying things",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Caleb",
+
+            "age": "5",
+
+            "image": "./img/ape2.jpg",
+
+            "hobbies": "Tending to my body hair",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+
+        },
+        {
+
+            "name": "Kelly",
+
+            "age": "4",
+
+            "image": "./img/dog3.jpg",
+
+            "hobbies": "Playing fetch, being happy, has kids",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Sam",
+
+            "age": "7",
+
+            "image": "./img/lion_male.jpg",
+
+            "hobbies": "Keeping my mane in check, laying around, roaring",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+
+        },
+        {
+
+            "name": "Emily",
+
+            "age": "9",
+
+            "image": "./img/dog2.jpg",
+
+            "hobbies": "Running in circles, looking out the window",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Max",
+
+            "age": "10",
+
+            "image": "./img/elephant.jpg",
+
+            "hobbies": "Likes to take long baths, provides showers when necessary",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Samantha",
+
+            "age": "8",
+
+            "image": "./img/lion_female.jpg",
+
+            "hobbies": "Playing around with prey, sunbathing",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Lola",
+
+            "age": "1",
+
+            "image": "./img/horse.jpg",
+
+            "hobbies": "Taking selfies while making weird faces, likes to sing",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Angie",
+
+            "age": "11",
+
+            "image": "./img/bear.jpg",
+
+            "hobbies": "Likes to fish, hiking in the woods",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Mia",
+
+            "age": "13",
+
+            "image": "./img/dog1.jpg",
+
+            "hobbies": "Likes his red ball",
+
+            "likeProgress": "0",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Mikey",
+
+            "age": "5",
+
+            "image": "./img/cheetah.jpg",
+
+            "hobbies": "Preying and training for the 100m sprint competitions",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Stewie",
+
+            "age": "8",
+
+            "image": "./img/camel.jpg",
+
+            "hobbies": "Wandering the desert, sunbathing",
+
+            "likeProgress": "0",
+
+            "gender": "male"
+
+        },
+        
+    ];
+
