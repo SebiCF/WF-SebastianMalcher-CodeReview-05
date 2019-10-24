@@ -1,0 +1,250 @@
+let movies_data =
+
+    [{
+
+            "name": "Charlie",
+
+            "age": "6",
+
+            "image": "./img/godfather.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "56",,
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Jacky",
+
+            "age": "5",
+
+            "image": "./img/pulpfiction.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "31",,
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Willow",
+
+            "age": "2",
+
+            "image": "./img/darkknight.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "32",,
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Felix",
+
+            "age": "8",
+
+            "image": "./img/casablanca.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "26",,
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Dawg",
+
+            "age": "3",
+
+            "image": "./img/endgame.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "41",,
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Caleb",
+
+            "age": "5",
+
+            "image": "./img/inception.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "49",,
+
+            "gender": "male"
+
+
+        },
+        {
+
+            "name": "Kelly",
+
+            "age": "4",
+
+            "image": "./img/lordoftherings1.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "68",,
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Sam",
+
+            "age": "7",
+
+            "image": "./img/matrix.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "44",
+
+            "gender": "male"
+
+
+        },
+        {
+
+            "name": "Emily",
+
+            "age": "9",
+
+            "image": "./img/interstellar.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "39",
+
+            "gender": "female"
+
+
+        },
+        {
+
+            "name": "Max",
+
+            "age": "10",
+
+            "image": "./img/gladiator.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "42",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Samantha",
+
+            "age": "8",
+
+            "image": "./img/joker1.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "46",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Lola",
+
+            "age": "1",
+
+            "image": "./img/theprestige.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "28",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Angie",
+
+            "age": "11",
+
+            "image": "./img/OnceUponaTimeintheWest.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "30",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Mia",
+
+            "age": "13",
+
+            "image": "./img/psycho.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "37",
+
+            "gender": "female"
+
+        },
+        {
+
+            "name": "Mikey",
+
+            "age": "5",
+
+            "image": "./img/usualsuspects.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "51",
+
+            "gender": "male"
+
+        },
+        {
+
+            "name": "Stewie",
+
+            "age": "8",
+
+            "image": "./img/memento.jpg",
+
+            "hobbies": "",
+
+            "likeProgress": "41",
+
+            "gender": "male"
+
+        },
+        
+    ];
+
