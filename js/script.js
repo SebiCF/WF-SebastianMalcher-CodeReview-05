@@ -17,8 +17,8 @@ function createUserProfiles(){
             }
 
             
-            let profile = $(`<div></div>`).addClass("col p-0 mx-2 my-3 bg-dark").html(`<img style="width:90%; height:100%;" class="mx-auto d-block bg-dark" src='${user_data[i].image}'>`).css("height","150px")
-
+            let profile = $(`<div></div>`).addClass("col p-0 mx-2 my-5 bg-dark border-top border-dark rounded-top").html(`<img style="width:90%; height:100%;"
+            class="mx-auto d-block bg-dark" src='${user_data[i].image}'><div class="border border-dark rounded-bottom" id="userDesc">${user_data[i].quote}</div>`).css("height","150px");
             $("content>.row:last-child").append(profile);
             // if(i%4 == 0){
             //     let lgScreenBreak = $("<div></div>").addClass('w-100 d-none d-lg-block');
