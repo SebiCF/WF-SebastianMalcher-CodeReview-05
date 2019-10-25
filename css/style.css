@@ -18,7 +18,7 @@ body main {
   background-color: rgba(255, 142, 2, 0.1);
 }
 
-body main content .topHeading {
+body main .topHeading {
   font-family: 'ZCOOL XiaoWei', serif;
   text-align: center;
   padding: 1% 2% 1% 2%;
@@ -46,7 +46,7 @@ body main content .row .col span {
   top: 5%;
   font-size: 210%;
   display: none;
-  color: #797676;
+  color: #000000;
 }
 
 body main content .row .col:hover > span {
