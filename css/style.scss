@@ -1,12 +1,16 @@
 body {
     /*sets font family, no margin to fit correctly*/
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Fira-Sans', sans-serif;
     margin: 0px;
     background-color: #bebebe;
     word-spacing: -1px;
 
     header{
-        background-color: #1b1b1d!important;
+        background-color: #1d082d!important;
+
+        nav{
+            background-color: #a7611ac7;
+        }
     }
 
     main{
@@ -14,11 +18,45 @@ body {
         background-color: rgba(255, 142, 2, 0.1);
 
     content{
+        
+        .topHeading{
+            font-family: 'ZCOOL XiaoWei', serif;
+            text-align: center;
+            padding: 1% 2% 1% 2%;
+            background-color: #1b1b1d75!important;
+            border-radius: 2%;
+            color: #d0cece;
+            text-shadow: 5px 5px 10px black;
+            margin: 3% 1% 3% 1%;
+            letter-spacing: 1px;
+
+        }
 
         .row{
 
             .col{
-                box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
+                
+                webkit-box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
+                -moz-box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
+                box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
+                background-color: #a7611ac7;
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+
+                span{
+                    position: absolute;
+                    right: 5%;
+                    top: 5%;
+                    font-size: 210%;
+                    display: none;
+                    color: #797676;
+                }
+                
+            }
+
+            .col:hover>span{
+                display: inline;
             }
 
         }
@@ -31,8 +69,7 @@ body {
             padding: 3%;
             text-align: center;
             border-width: 2px!important;
-            box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
-        }
+            box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3), 0 1px 7px 0px rgba(0, 0, 0, 0.25) !important        }
 
 
         img{
