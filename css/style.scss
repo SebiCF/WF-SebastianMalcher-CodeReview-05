@@ -35,6 +35,9 @@ body {
         .pagination {
             margin-bottom: -2%;
         }
+        .pagination:hover {
+           cursor: pointer;
+        }
 
         .sortDiv {
 
@@ -53,6 +56,21 @@ body {
 
             #sortBtnAgeAsc {
                 margin-left: 2%;
+            }
+            #sortBtnGenderDesc:hover {
+                cursor: pointer;
+            }
+
+            #sortBtnGenderAsc:hover {
+                cursor: pointer;
+            }
+
+            #sortBtnAgeDesc:hover {
+                cursor: pointer;
+            }
+
+            #sortBtnAgeAsc:hover {
+                cursor: pointer;
             }
         }
 
@@ -73,6 +91,12 @@ body {
                         font-size: 210%;
                         display: none;
                         color: #000000;
+                    }
+                    span:hover{
+                        font-size: 240%;
+                        cursor: pointer;
+                        color:green;
+                        transition: all 0.5s;
                     }
                 }
 
@@ -102,6 +126,7 @@ body {
         }
 
         .favorites {
+            display: none;
             color: #563D7C !important;
             text-shadow: 1px 1px 1px rgb(116, 116, 116);
 

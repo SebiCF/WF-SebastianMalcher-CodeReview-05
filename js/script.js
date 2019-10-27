@@ -29,7 +29,8 @@ function pagination(pageNumber, user_data, contentNumber) {
 
         $("main>.pagination:" + contentNumber).append(nextUserDataPageBtn);
 
-        nextUserDataPageBtn.addEventListener("click", function (e) {/*adds next page event*/
+        nextUserDataPageBtn.addEventListener("click", function (e) {
+            /*adds next page event*/
             let currentBtnBlue = parseInt(e.target.innerHTML);
             $("content:" + contentNumber).html(" ");
             if (contentNumber == "first") {
@@ -51,7 +52,8 @@ function pagination(pageNumber, user_data, contentNumber) {
     let sortBtns = $(`<div></div>`).addClass("sortDiv text-center p-2").html('<span id="sortBtnAgeAsc">▲</span><span id="sortBtnAgeDesc">▼</span><span>By Age</span><span id="sortBtnGenderAsc">▲</span><span id="sortBtnGenderDesc">▼</span><span>By Gender</span>');
     $("main>.pagination:" + "first").before(sortBtns);
     colorizeCurrentPageBtn(pageNumber, contentNumber);
-    document.getElementById("sortBtnGenderAsc").addEventListener("click", function (e) {/*adds sort event*/
+    document.getElementById("sortBtnGenderAsc").addEventListener("click", function (e) {
+        /*adds sort event*/
         sortByGenderAsc(user_data, pageNumber, "first")
     })
     document.getElementById("sortBtnGenderDesc").addEventListener("click", function (e) {
@@ -114,7 +116,7 @@ function createUserProfiles(pageNumber, user_data, user_dataFavorites) {
         $("content:first>.row:last-child").append(profile);
 
         if (i % 2 == 0) {
-            let lgScreenBreak = $("<div></div>").addClass('w-100 d-lg-none d-md-block');/*adds mobile breaks*/
+            let lgScreenBreak = $("<div></div>").addClass('w-100 d-lg-none d-md-block'); /*adds mobile breaks*/
             $(`content:first>.row:last-child>div:last-child`).before(lgScreenBreak);
         }
         if (i % 1 == 0) {
@@ -127,10 +129,16 @@ function createUserProfiles(pageNumber, user_data, user_dataFavorites) {
     if ($("content:first>.row:last>.col-sm-8").length < 4) {
         $("content:first>.row:last>.col-sm-8").addClass("col-md-5 col-lg-3 mx-md-auto")
     }
-
+   
     document.querySelectorAll(".favoriteBtn").forEach(function (elem) {
-        elem.addEventListener("click", function (e) {/*adds favorite event*/
-            console.log(e.target.dataset.profilecount);
+        
+        elem.addEventListener("mouseover", function (e) {
+            e.target.style.transform = "rotate3d(0,0,0,360deg)";
+        });
+        
+        elem.addEventListener("click", function (e) {
+            /*adds favorite event*/
+            document.querySelector(".favorites").style.display = "inline";
             user_data[e.target.dataset.profilecount].likeProgress = parseInt(user_data[e.target.dataset.profilecount].likeProgress) + 1;
             user_dataFavorites.push(user_data[e.target.dataset.profilecount]);
             let userNumber = e.target.dataset.profilecount;
@@ -159,7 +167,6 @@ function createUserProfiles(pageNumber, user_data, user_dataFavorites) {
                 createFavorites(pageNumberFavorites, user_dataFavorites);
                 colorizeCurrentPageBtn((pageNumberFavorites < 2) ? 2 : pageNumberFavorites, "last")
             }
-            console.log(user_dataFavorites)
         })
     })
 }
@@ -168,7 +175,8 @@ function createFavorites(pageNumberFavorites, user_dataFavorites) {
     let row = $("<div></div>").addClass("row mb-5 mt-1 p-0");
     $("#favorites").append(row);
     let firstProfile = (pageNumberFavorites % 2 == 0) ? pageNumberFavorites - 2 : pageNumberFavorites - 1;
-    if (firstProfile < 0) {/*creates favorites*/
+    if (firstProfile < 0) {
+        /*creates favorites*/
         pageNumberFavorites = 2;
         firstProfile = 0;
     }
@@ -179,7 +187,7 @@ function createFavorites(pageNumberFavorites, user_dataFavorites) {
             break;
         }
 
-        let profile = $(`<div></div>`).addClass("col-lg-5 col-7 p-0 mx-auto mt-4 rounded-top favoriteDiv").html(`<span data-profileCount="${i}" class="fas fa-heart unfavoriteBtn"></span><img style="width:90%; height:100%;"
+        let profile = $(`<div></div>`).addClass("col-lg-5 col-7 p-0 mx-auto mt-4 rounded-top favoriteDiv").html(`<span data-profileCount="${i}" class="fas fa-heart unfavoriteBtn" style="color:red;"></span><img style="width:90%; height:100%;"
         class="mx-auto d-block bg-dark" src='${user_dataFavorites[i].image}'><div style="height:140px" class="rounded-bottom mb-5" id="userDesc">Name: ${user_dataFavorites[i].name}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAge: ${user_dataFavorites[i].age}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProgress: <div style="float: right; width: 70px;border: 1px solid black;margin-left: -7%;"><div style="width: ${parseInt(user_dataFavorites[i].likeProgress)*10}%;background-color: green;justify-content: center;">${user_dataFavorites[i].likeProgress}</div></div><br>Hobbies:&nbsp&nbsp&nbsp${user_dataFavorites[i].hobbies}<br>${user_dataFavorites[i].quote}<br></div>`)
             .css({
                 'height': '250px',
@@ -190,7 +198,8 @@ function createFavorites(pageNumberFavorites, user_dataFavorites) {
         $("#favorites>.row:last-child").append(profile);
     }
     paginationFavorites(pageNumberFavorites, user_dataFavorites);
-    document.querySelectorAll(".unfavoriteBtn").forEach(function (elem) {/*adds unfavorite event*/
+    document.querySelectorAll(".unfavoriteBtn").forEach(function (elem) {
+        /*adds unfavorite event*/
         elem.addEventListener("click", function (e) {
             console.log(e.target.dataset.profilecount);
             user_data.push(user_dataFavorites[e.target.dataset.profilecount]);
