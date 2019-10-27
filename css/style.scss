@@ -5,23 +5,25 @@ body {
     background-color: #bebebe;
     word-spacing: -1px;
 
-    header{
-        background-color: #1d082d!important;
+    header {
 
-        nav{
+        background-color: #1d082d !important;
+        background: linear-gradient(45deg, rgba(10, 10, 10, 0.2), rgba(5, 5, 5, 0.15));
+
+        nav {
             background-color: #a7611ac7;
         }
     }
 
-    main{
+    main {
 
         background-color: rgba(255, 142, 2, 0.1);
-        
-        .topHeading{
+
+        .topHeading {
             font-family: 'ZCOOL XiaoWei', serif;
             text-align: center;
             padding: 1% 2% 1% 2%;
-            background-color: #1b1b1d75!important;
+            background-color: #1b1b1d75 !important;
             border-radius: 2%;
             color: #d0cece;
             text-shadow: 5px 5px 10px black;
@@ -30,54 +32,95 @@ body {
 
         }
 
-    content{
-        
-        
-
-        .row{
-
-            .col{
-                
-                webkit-box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
-                -moz-box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
-                box-shadow:inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25)!important;
-                background-color: #a7611ac7;
-                border-left: 1px solid black;
-                border-top: 1px solid black;
-                border-right: 1px solid black;
-
-                span{
-                    position: absolute;
-                    right: 5%;
-                    top: 5%;
-                    font-size: 210%;
-                    display: none;
-                    color: #000000;
-                }
-                
-            }
-
-            .col:hover>span{
-                display: inline;
-            }
-
+        .pagination {
+            margin-bottom: -2%;
         }
 
-        #userDesc{
-            font-size: 110%;
-            width: 100%;
-            background-color: #1d082d;
-            color: #bebebe;
-            padding: 3%;
-            text-align: center;
-            border-width: 2px!important;
-            box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3), 0 1px 7px 0px rgba(0, 0, 0, 0.25) !important        }
+        .sortDiv {
 
 
-        img{
-            // height: 150px;
-            border-radius: 40%;
+            #sortBtnGenderDesc {
+                margin-left: -0.5%;
+            }
+
+            #sortBtnGenderAsc {
+                margin-left: 2%;
+            }
+
+            #sortBtnAgeDesc {
+                margin-left: -0.5%;
+            }
+
+            #sortBtnAgeAsc {
+                margin-left: 2%;
+            }
+        }
+
+        content {
+
+            .row {
+
+                div[class^=col] {
+                    webkit-box-shadow: inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+                    -moz-box-shadow: inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+                    box-shadow: inset 0px 2px 20px 2px #797676, 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+                    background-color: #a7611ac7;
+
+                    span {
+                        position: absolute;
+                        right: 5%;
+                        top: 5%;
+                        font-size: 210%;
+                        display: none;
+                        color: #000000;
+                    }
+                }
+
+                div[class^=col]:hover>span {
+                    display: inline;
+                }
+            }
+
+            #userDesc {
+                font-weight: 600;
+                width: 100%;
+                height: 55%;
+                background-color: #1d082d;
+                color: #bebebe;
+                padding: 3%;
+                text-align: center;
+                border-width: 2px !important;
+                webkit-box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+                -moz-box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+                box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3), 0 0px 5px 0px rgba(0, 0, 0, 0.25) !important;
+            }
+
+            img {
+                // height: 150px;
+                border-radius: 40%;
+            }
+        }
+
+        .favorites {
+            color: #563D7C !important;
+            text-shadow: 1px 1px 1px rgb(116, 116, 116);
+
+            div {
+
+                .favoriteDiv {
+                    margin-bottom: 7.5em !important;
+                }
+            }
+        }
+
+        #favorites {
+
+            div {
+
+                .favoriteDiv {
+                    margin-bottom: 7.7em !important;
+                }
+            }
         }
     }
-}}
-
+}

@@ -1,4 +1,4 @@
-var user_data =
+var user_data_file =
 
     [{
 
@@ -8,7 +8,7 @@ var user_data =
 
             "image": "./img/ape.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Do not take life too seriously, you will never get out of it alive.'",
 
             "hobbies": "Bananas and climbing on trees",
 
@@ -25,7 +25,7 @@ var user_data =
 
             "image": "./img/bird.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Be careful when you follow the masses. Sometimes the M is silent.'",
 
             "hobbies": "Flying around",
 
@@ -43,7 +43,7 @@ var user_data =
 
             "image": "./img/sloth.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Life is a long process of getting tired'",
 
             "hobbies": "Sleeping, eating, hanging around - generally all of these combined :P",
 
@@ -60,7 +60,7 @@ var user_data =
 
             "image": "./img/tiger.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Keep it real.'",
 
             "hobbies": "What housecats do, just bigger",
 
@@ -75,9 +75,9 @@ var user_data =
 
             "age": "3",
 
-            "image": "./img/ape2.jpg",
+            "image": "./img/niko.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Cats rule the world.'",
 
             "hobbies": "Eating, annoying my human, destroying things",
 
@@ -94,7 +94,7 @@ var user_data =
 
             "image": "./img/ape2.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'The trouble with being in the rat race is that even if you win you're still a rat.'",
 
             "hobbies": "Tending to my body hair",
 
@@ -112,7 +112,7 @@ var user_data =
 
             "image": "./img/dog3.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Age is of no importance unless you're a cheese.'",
 
             "hobbies": "Playing fetch, being happy, has kids",
 
@@ -130,7 +130,7 @@ var user_data =
 
             "image": "./img/lion_male.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'I never made a mistake in my life. I thought I did once, but I was wrong.'",
 
             "hobbies": "Keeping my mane in check, laying around, roaring",
 
@@ -148,7 +148,7 @@ var user_data =
 
             "image": "./img/dog2.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'The hardest thing in the world to understand is the income tax.'",
 
             "hobbies": "Running in circles, looking out the window",
 
@@ -166,7 +166,7 @@ var user_data =
 
             "image": "./img/elephant.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Live every day to the fullest. When going to the bathroom take a newspaper!'",
 
             "hobbies": "Likes to take long baths, provides showers when necessary",
 
@@ -183,7 +183,7 @@ var user_data =
 
             "image": "./img/lion_female.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'I don't care about my Prince Charming. Where the forest animals that clean?'",
 
             "hobbies": "Playing around with prey, sunbathing",
 
@@ -200,7 +200,7 @@ var user_data =
 
             "image": "./img/horse.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'You are only young once, but you can be immature forever.'",
 
             "hobbies": "Taking selfies while making weird faces, likes to sing",
 
@@ -217,7 +217,7 @@ var user_data =
 
             "image": "./img/bear.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'The fact that we're all different is the one thing we all have in common.'",
 
             "hobbies": "Likes to fish, hiking in the woods",
 
@@ -236,7 +236,7 @@ var user_data =
 
             "quote": "'Seize the day'",
 
-            "hobbies": "Likes his red ball",
+            "hobbies": "Likes her red ball",
 
             "likeProgress": "0",
 
@@ -251,7 +251,7 @@ var user_data =
 
             "image": "./img/cheetah.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'If you don’t know where you are going, you might wind up someplace else.'",
 
             "hobbies": "Preying and training for the 100m sprint competitions",
 
@@ -268,7 +268,7 @@ var user_data =
 
             "image": "./img/camel.jpg",
 
-            "quote": "'Seize the day'",
+            "quote": "'Remember if you can't say something nice...make it funny.'",
 
             "hobbies": "Wandering the desert, sunbathing",
 
