@@ -78,6 +78,9 @@ function resetPageNumberXColor(contentNumber) {
 
 function colorizeCurrentPageBtn(pageNumber, contentNumber) {
     let curBtn = (contentNumber == "first") ? pageNumber / 8 - 1 : Math.ceil(pageNumber / 2 - 1);
+    if (curBtn < 0 || (curBtn < 1 && curBtn > 0)){
+        curBtn = 0;
+    }
     if (contentNumber == "first") {
         let btn = document.querySelector(`div[class~=nextUserDataPageBtn${curBtn}]`)
         btn.style.color = "#5591ff";
@@ -94,6 +97,9 @@ function colorizeCurrentPageBtn(pageNumber, contentNumber) {
 function createUserProfiles(pageNumber, user_data, user_dataFavorites) {
     if (user_data.length + 8 == pageNumber) {
         pageNumber = pageNumber - 8;
+    }
+    if(pageNumber < 8){
+        pageNumber = 8;
     }
     let firstProfile = pageNumber - 8
     for (i = firstProfile; i < pageNumber; i++) {
@@ -150,12 +156,10 @@ function createUserProfiles(pageNumber, user_data, user_dataFavorites) {
             if (user_data.length + 8 == pageNumber) {
                 pageNumber = pageNumber - 8;
             }
-
-            pagination(pageNumber, user_data, "first");
-
             let pageNumberFavorites = user_dataFavorites.length;
             if (document.querySelector(`div[class~=nextUserDataPageBtn${pageNumber/8-1}]`)) {
-                colorizeCurrentPageBtn(pageNumber, "first")
+                pagination(pageNumber, user_data, "first");
+                colorizeCurrentPageBtn(pageNumber, "first");
                 createUserProfiles(pageNumber, user_data, user_dataFavorites);
                 createFavorites(pageNumberFavorites, user_dataFavorites);
                 colorizeCurrentPageBtn((pageNumberFavorites < 2) ? 2 : pageNumberFavorites, "last")
